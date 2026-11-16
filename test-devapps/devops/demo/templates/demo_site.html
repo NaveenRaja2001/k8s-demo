@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome to DevOps Session</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: yellow;
+}
+
+article {
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+article img {
+  display: block;
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  margin: 20px auto 0;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: yellow;
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Welcome to DevOps Session</h2>
+</header>
+
+<section>
+  <article>
+    <h1>Agenda</h1>
+    <p>Build the container image locally and run it on Kubernetes without pushing to a registry.</p>
+    <img src="{% static 'demo/images/podman-k8s.png' %}" alt="Sharing Podman images with a Kubernetes cluster">
+  </article>
+</section>
+
+<footer>
+  <p>DevOps Session</p>
+</footer>
+
+</body>
+</html>
